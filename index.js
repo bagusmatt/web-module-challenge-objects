@@ -102,11 +102,12 @@ console.log(reviews[5].feedback);
 // console.log(reviews);
 
 function addreview(name, rating, feedback) {
-  return reviews.push({ name, rating, feedback });
+  reviews.push({ name, rating, feedback });
+  return reviews;
 }
 
-// addreview("matt", 5, "great place");
 console.log(addreview("matt", 5, "Great"));
+console.log(reviews);
 
 /* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"*/
 
